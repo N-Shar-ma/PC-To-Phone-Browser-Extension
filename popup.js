@@ -4,5 +4,5 @@ chrome.tabs.query({"active": true, "currentWindow": true}, ([tab]) => {
         element: document.getElementById("qr-code"),
         value: tab.url
     })
-    console.log(tab)
+    document.getElementsByTagName("p")[0].innerText = "Scan using the Scanner App or Google Lens on your mobile device";
 })
